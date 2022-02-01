@@ -4,12 +4,10 @@
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
-
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU Affero General Public License for more details.
-
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
@@ -31,8 +29,8 @@ from pyrogram import (
 
 buttons = [
     [
-        InlineKeyboardButton('⚡️Make Own Bot', url='https://github.com/subinps/VCPlayerBot'),
-        InlineKeyboardButton('🧩 Join Here', url='https://t.me/subin_works'),
+        InlineKeyboardButton('⚡️ Group', url='https://t.me/PocongUserbot'),
+        InlineKeyboardButton('🧩 Channels', url='https://t.me/PocongProject'),
     ]
     ]
 def get_cmd(dur):
@@ -47,7 +45,7 @@ async def search(client, query):
         answers.append(
             InlineQueryResultArticle(
                 title="Deploy",
-                input_message_content=InputTextMessageContent(f"{Config.REPLY_MESSAGE}\n\n<b>You can't use this bot in your group, for that you have to make your own bot from the [SOURCE CODE](https://github.com/subinps/VCPlayerBot) below.</b>", disable_web_page_preview=True),
+                input_message_content=InputTextMessageContent(f"{Config.REPLY_MESSAGE}\n\n<b>You can't use this bot in your group, for that you have to make your own bot from the [SOURCE CODE](https://t.me/PocongProject) below.</b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
