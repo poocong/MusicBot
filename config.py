@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) @subinps
+# Copyright (C) 2022 @PocongProject
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -44,11 +44,11 @@ class Config:
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://youtu.be/THN8ihZ6qy0")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", None)
-    DATABASE_NAME=os.environ.get("DATABASE_NAME", "VCPlayerBot")
+    DATABASE_NAME=os.environ.get("DATABASE_NAME", "MusicBot")
 
 
     #heroku
@@ -65,7 +65,7 @@ class Config:
     
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
     RECORDING_TITLE=os.environ.get("RECORDING_TITLE", False)
-    TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Kolkata")    
+    TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Jakarta")    
     IS_VIDEO=is_enabled(os.environ.get("IS_VIDEO", 'True'))
     IS_LOOP=is_enabled(os.environ.get("IS_LOOP", 'True'))
     DELAY=int(os.environ.get("DELAY", '10'))
@@ -249,11 +249,11 @@ if disabled, video files will be played as audio.__
 **Shuffle Mode** - __Enabling this will shuffle the playlist whenever you import a playlist or using /yplay __
 
 **Auto Reply** - __Choose whether to reply the PM messages of playing user account.
-You can  set up a custom reply message using `REPLY_MESSAGE` confug.__
+You can  set up a custom reply message using `REPLY_MESSAGE` config.__
 
 """
     SCHEDULER_HELP="""
-__VCPlayer allows you to schedule a stream. 
+__MusicBot allows you to schedule a stream. 
 This means you can schedule a stream for a future date and on the scheduled date, stream will be played automatically.
 At present you can schedule a stream for even one year!!. Make sure you have set up a databse, else you will loose your schedules whenever the player restarts. __
 
@@ -273,7 +273,7 @@ Command: **/cancelall**
 __Cancel all the scheduled streams__
 """
     RECORDER_HELP="""
-__With VCPlayer you can easily record all your video chats.
+__With MusicBot you can easily record all your video chats.
 By default telegram allows you to record for a maximum duration of 4 hours. 
 An attempt to overcome this limit has been made by automatically restarting the recording after  4 hours__
 
@@ -358,7 +358,7 @@ __If your player went something gone wrong, you can easily check the logs using 
  
 Command : **/env**
 __Setup your config vars with /env command.__
-__Example: To set up a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hey, Check out @subin_works rather than spamming in my PM`__
+__Example: To set up a__ `REPLY_MESSAGE` __use__ `/env REPLY_MESSAGE=Hey, Check out @PocongProject rather than spamming in my PM`__
 __You can delete a config var by ommiting a value for that, Example:__ `/env LOG_GROUP=` __this will delete the existing LOG_GROUP config.
 
 Command: **/config**
@@ -382,14 +382,14 @@ Tip: __You can easily change the CHAT config by adding the user account and bot 
 
 3. `BOT_TOKEN` : __[@Botfather](https://telegram.dog/BotFather)__
 
-4. `SESSION_STRING` : __Generate From here [GenerateStringName](https://repl.it/@subinps/getStringName)__
+4. `SESSION_STRING` : __Generate From here [GenerateStringName](https://t.me/Stringpocongbot)__
 
 5. `CHAT` : __ID of Channel/Group where the bot plays Music.__
 
 6. `STARTUP_STREAM` : __This will be streamed on startups and restarts of bot. 
 You can use either any STREAM_URL or a direct link of any video or a Youtube Live link. 
-You can also use YouTube Playlist.Find a Telegram Link for your playlist from [PlayList Dumb](https://telegram.dog/DumpPlaylist) or get a PlayList from [PlayList Extract](https://telegram.dog/GetAPlaylistbot). 
-The PlayList link should in form `https://t.me/DumpPlaylist/xxx`
+You can also use YouTube Playlist.Find a Telegram Link for your playlist 
+The PlayList link should in form `https://t.me/PocongProject`
 You can also use the files from a channel as startup stream. For that just use the channel id or channel username of channel as STARTUP_STREAM value.
 For more info on channel play , read help from player section.__
 
