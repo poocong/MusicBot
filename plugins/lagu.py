@@ -1,7 +1,7 @@
 # copyright (C) @PocongProject
 # credits @Pocongonlen
 # MusicBot <https://github.com/poocong/MusicBot>
-
+# yang apus ini titit nya bercabang
 
 import os
 import requests
