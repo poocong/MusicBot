@@ -50,7 +50,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("Bot ini dikembangkan oleh @PocongProject...")
+    m.edit("Prosess Mendownload Lagu. . . . Bot by @PocongProject...")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
